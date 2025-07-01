@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Outfit', sans-serif;
+    src: url('../fonts/Outfit-VariableFont_wght.ttf');
+}
+
+:root{
+    --body-color: #121826;
+    --body-font: 'Outfit';
+    --background-card: #212936;
+    --text-color: #9da3ae;
+    --header-main: #e5e7eb;
+    --background-hand: #fceed8;
+    --background-goal: #dee9fc;
+    --background-points: #fbe5e6;
+    --header-card: #d3d5da;
+    --link-footer: #284bce;
+
+}
+
+body{
+    font-family: var(--body-font), sans-serif;
+    background: var(--body-color);
+    font-size: 1rem;
+    font-weight: 400;
+    background-image: url(../resources/Background_image.svg);
+
+}
+
+/* ================  FOOTER  ============== */
+
+footer {
+    max-width: 275px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    color: var(--text-color);
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.attribution p {
+    font-weight: 600;
+}
+
+.attribution a {
+    font-style: italic;
+    text-decoration: none;
+    color: var(--link-footer);
+}
