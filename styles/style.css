@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@font-face{
+@font-face {
     font-family: 'Outfit', sans-serif;
     src: url('../fonts/Outfit-VariableFont_wght.ttf');
 }
 
-:root{
+:root {
     --body-color: #121826;
     --body-font: 'Outfit';
     --background-card: #212936;
@@ -23,7 +23,7 @@
 
 }
 
-body{
+body {
     font-family: var(--body-font), sans-serif;
     background: var(--body-color);
     font-size: 1rem;
@@ -31,74 +31,74 @@ body{
     background-image: url(../resources/Background_image.svg);
 
 }
-.wrapper{
-    margin: 0 auto;
-}
 
-.header{
+.header {
     text-align: center;
     padding: 52px 24px 0 24px;
     color: var(--text-color);
-
 }
-h1{
+
+h1 {
     font-size: 40px;
     font-weight: 600;
     color: var(--header-main);
     margin-bottom: 24px;
 }
-.main{
+
+.main {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
     gap: 24px;
     padding: 48px;
-
 }
-h2{
-    font-size:20px;
+
+h2 {
+    font-size: 20px;
     font-weight: 600;
     color: var(--header-main);
     margin-bottom: 26px;
 }
-.card{
+
+.card {
     max-width: 312px;
     border-radius: 15px;
     background-color: var(--background-card);
     color: var(--text-color);
     padding: 24px;
-
-
+    margin: 0 auto;
 }
-.icon{
+
+.icon {
     width: 52px;
     height: 52px;
     border-radius: 50%;
     display: grid;
     place-content: center;
     margin-bottom: 20px;
-
 }
-.hand{
+
+.hand {
     background-color: var(--background-hand);
 }
-.goal{
+
+.goal {
     background-color: var(--background-goal);
 }
-.points{
+
+.points {
     background-color: var(--background-points);
 }
 
-.description{
+.description {
     margin-bottom: 20px;
     color: var(--header-card);
 }
 
-.img-card{
+.img-card {
 
     border-radius: 15px;
     overflow: hidden;
 }
-
 
 /* ================  FOOTER  ============== */
 
@@ -126,22 +126,30 @@ footer {
     color: var(--link-footer);
 }
 
-@media screen and (min-width: 640px) and (max-width: 1023px){
+@media screen and (min-width: 640px) and (max-width: 1023px) {
 
-    .main{
+    .main {
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 48px;
     }
 
+    .card {
+        margin: 0;
+    }
+
 }
 
-@media screen and (min-width: 1024px){
-    .main{
+@media screen and (min-width: 1024px) {
+    .main {
         justify-content: center;
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 52px;
+    }
+
+    .card {
+        margin: 0;
     }
 }
