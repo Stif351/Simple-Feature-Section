@@ -31,6 +31,74 @@ body{
     background-image: url(../resources/Background_image.svg);
 
 }
+.wrapper{
+    margin: 0 auto;
+}
+
+.header{
+    text-align: center;
+    padding: 52px 24px 0 24px;
+    color: var(--text-color);
+
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--header-main);
+    margin-bottom: 24px;
+}
+.main{
+    display: flex;
+flex-direction: column;
+    gap: 24px;
+    padding: 48px;
+
+}
+h2{
+    font-size:20px;
+    font-weight: 600;
+    color: var(--header-main);
+    margin-bottom: 26px;
+}
+.card{
+    max-width: 312px;
+    border-radius: 15px;
+    background-color: var(--background-card);
+    color: var(--text-color);
+    padding: 24px;
+
+
+}
+.icon{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin-bottom: 20px;
+
+}
+.hand{
+    background-color: var(--background-hand);
+}
+.goal{
+    background-color: var(--background-goal);
+}
+.points{
+    background-color: var(--background-points);
+}
+
+.description{
+    margin-bottom: 20px;
+    color: var(--header-card);
+}
+
+.img-card{
+
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 
 /* ================  FOOTER  ============== */
 
@@ -56,4 +124,24 @@ footer {
     font-style: italic;
     text-decoration: none;
     color: var(--link-footer);
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px){
+
+    .main{
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 48px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    .main{
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 52px;
+    }
 }
